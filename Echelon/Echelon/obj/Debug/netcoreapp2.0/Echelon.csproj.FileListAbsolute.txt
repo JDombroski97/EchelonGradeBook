@@ -1,0 +1,12 @@
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\bin\Debug\netcoreapp2.0\Echelon.deps.json
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\bin\Debug\netcoreapp2.0\Echelon.runtimeconfig.json
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\bin\Debug\netcoreapp2.0\Echelon.runtimeconfig.dev.json
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\bin\Debug\netcoreapp2.0\Echelon.dll
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\bin\Debug\netcoreapp2.0\Echelon.pdb
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\obj\Debug\netcoreapp2.0\Echelon.csprojResolveAssemblyReference.cache
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\obj\Debug\netcoreapp2.0\Echelon.csproj.CoreCompileInputs.cache
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\obj\Debug\netcoreapp2.0\Echelon.AssemblyInfoInputs.cache
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\obj\Debug\netcoreapp2.0\Echelon.AssemblyInfo.cs
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\obj\Debug\netcoreapp2.0\Echelon.dll
+C:\Users\Josh\OneDrive\Programming\Adv Project Dev\Echelon\Echelon\obj\Debug\netcoreapp2.0\Echelon.pdb
