@@ -12,5 +12,10 @@ namespace Echelon.Controllers
         {
             return View();
         }
+
+        public IActionResult JustinIsStupid()
+        {
+            return View();
+        }
     }
 }
