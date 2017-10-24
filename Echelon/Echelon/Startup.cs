@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Echelon.Data;
 using Echelon.Models;
 using Echelon.Services;
+using Microsoft.AspNetCore.Http;
 
 namespace Echelon
 {
@@ -23,7 +24,7 @@ namespace Echelon
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        /// This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -36,10 +37,16 @@ namespace Echelon
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
+            services.AddAuthentication("AuthSecurity").AddCookie("AuthSecurity", options =>
+            {
+                options.AccessDeniedPath = new PathString("/Account/Forbidden");
+                options.LoginPath = new PathString("/Account/Login");
+            });
+
             services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -56,13 +63,13 @@ namespace Echelon
             app.UseStaticFiles();
 
             app.UseAuthentication();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvcWithDefaultRoute();
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Home}/{action=Index}/{id?}");
+            //});
         }
     }
 }
