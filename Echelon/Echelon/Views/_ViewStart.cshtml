@@ -1,3 +1,13 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using Echelon.Models
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    Layout = "_LayoutSession";
+}
+else{    
     Layout = "_Layout";
 }
